@@ -46,5 +46,4 @@ bot.on('message',message => {
             });
             }else{
                 return message.reply("vous ne possedez pas les droits pour utiliser cette commande")
-}}})
-
+}})
