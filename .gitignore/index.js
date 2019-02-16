@@ -21,7 +21,7 @@ bot.on('message',message => {
         .setDescription("Information du discord")
         .addField("Nom du discord", message.guild.name)
         .addField("Discord crée le", message.guild.createdAt)
-        .addField("Rejoin le", message.member.joinedAt)
+        .addField("Rejoins le", message.member.joinedAt)
         .addField("Nombres d'utilisateur sur le discord", message.guild.memberCount)
         .setColor("#e93b3b")
     message.channel.sendEmbed(embed)
