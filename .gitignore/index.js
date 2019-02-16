@@ -13,7 +13,7 @@ bot.login("NTQ2NDAxODg4Nzc4ODQ2MjA5.D0n5oQ.CWo-P4IvzvJo0rs_zXURM0BH1Pc");
 
 bot.on('message',message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste des commandes: \n *sondage");
+        message.channel.sendMessage("Liste des commandes: \n *infodiscord");
     }
 
     if (message.content === prefix + "infodiscord"){
@@ -29,7 +29,7 @@ bot.on('message',message => {
     }
 
     if (message.content.startsWith(prefix + "sondage")) {
-        if(message.author.is == "546401888778846209"){
+        if(message.author.is == "381939268718690305("){
             let args = message.content.split("").slice(1);
             let thingToEcho = args.join("")
             var embed = new Discord.RichEmbed()
