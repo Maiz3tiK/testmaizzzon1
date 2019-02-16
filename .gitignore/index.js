@@ -16,7 +16,6 @@ bot.on('message',message => {
         message.channel.sendMessage("Liste des commandes: \n *sondage");
     }
 
-bot.on('message',message => {
     if (message.content === prefix + "infodiscord"){
         var embed = new Discord.RichEmbed()
         .setDescription("Information du discord")
@@ -28,7 +27,7 @@ bot.on('message',message => {
     message.channel.sendEmbed(embed)
 
     }
- bot.on('message',message => {
+
     if (message.content.startsWith(prefix + "sondage")) {
         if(message.author.is == "<@&543856962819981313>"){
             let args = message.content.split("").slice(1);
@@ -46,4 +45,4 @@ bot.on('message',message => {
             });
             }else{
                 return message.reply("vous ne possedez pas les droits pour utiliser cette commande")
-}})
+}}})
