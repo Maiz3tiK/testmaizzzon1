@@ -20,9 +20,9 @@ bot.on('message',message => {
         var embed = new Discord.RichEmbed()
         .setDescription("Information du discord")
         .addField("Nom du discord", message.guild.name)
-        .addField("Crée le", message.guild.createdAt)
-        .addField("Tu as rejoin le", message.member.joinedAt)
-        .addField("Utilisateur sur le discord", message.guild.memberCount)
+        .addField("Discord crée le", message.guild.createdAt)
+        .addField("Rejoin le", message.member.joinedAt)
+        .addField("Nombres d'utilisateur sur le discord", message.guild.memberCount)
         .setColor("#e93b3b")
     message.channel.sendEmbed(embed)
 
