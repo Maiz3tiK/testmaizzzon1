@@ -12,7 +12,7 @@ bot.login(process.env.TOKEN);
 
 
 bot.on('message',message => {
-    if (message.content === prefix + "+help"){
+    if (message.content === prefix + "help"){
         message.channel.sendMessage("Liste des commandes: \n +infodiscord \n +ping \n +rank");
     }
 
