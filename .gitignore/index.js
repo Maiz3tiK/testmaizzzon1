@@ -14,7 +14,13 @@ bot.login(process.env.TOKEN);
 bot.on('message',message => {
     if (message.content === prefix + "help"){
         var embed = new Discord.RichEmbed()
-        message.channel.sendMessage("Liste des commandes: \n **+infodiscord** \n **+ping** \n **+rank** ");
+        .setDescription("**Liste des commandes**")
+        .setField("+infodiscord")
+        .setField("+ping")
+        .setField("+rank")
+        .setColor("#fffbfa")
+    message.channel.sendEmbed(embed)
+
     }
 
     if (message.content === prefix + "infodiscord"){
