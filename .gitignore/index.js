@@ -12,8 +12,8 @@ bot.login(process.env.TOKEN);
 
 
 bot.on('message',message => {
-    if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste des commandes: \n **+infodiscord** \n **+ping** \n **+rank** ");
+    if (message.content === prefix + "+help"){
+        message.channel.sendMessage("Liste des commandes: \n +infodiscord \n +ping \n +rank");
     }
 
     if (message.content === prefix + "infodiscord"){
@@ -36,13 +36,13 @@ bot.on('message',message => {
                 .setDescription("sondage")
                 .addField(thingToEcho, "Répondre avec :white_check_mark: ou bien avec :x:")
                 .setColor("#e93b3b")
-                .setTimestamp(setTimestamp? Date:
+                .setTimestamp()
             message.guild.channels.find("name", "sondage").sendEmbed(embed)
             .then(function(message) {
                 message.react("✅")
                 message.react("❌")
             }).catch(function() {
-            }))
+            });
             }else{
                 return message.reply("vous ne possedez pas les droits pour utiliser cette commande")
 }}})
