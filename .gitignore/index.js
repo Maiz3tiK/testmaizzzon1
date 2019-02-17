@@ -18,12 +18,12 @@ bot.on('message',message => {
 
     if (message.content === prefix + "infodiscord"){
         var embed = new Discord.RichEmbed()
-        .setDescription("Information du discord")
+        .setDescription("**Infos Discord**")
         .addField("Nom du discord", message.guild.name)
         .addField("Discord crée le", message.guild.createdAt)
         .addField("Rejoins le", message.member.joinedAt)
         .addField("Nombres d'utilisateur sur le discord", message.guild.memberCount)
-        .setColor("#e93b3b")
+        .setColor("#fffbfa")
     message.channel.sendEmbed(embed)
 
     }
