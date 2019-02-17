@@ -36,13 +36,13 @@ bot.on('message',message => {
                 .setDescription("sondage")
                 .addField(thingToEcho, "Répondre avec :white_check_mark: ou bien avec :x:")
                 .setColor("#e93b3b")
-                .setTimestamp("1 day")
+                .setTimestamp(setTimestamp? Date:
             message.guild.channels.find("name", "sondage").sendEmbed(embed)
             .then(function(message) {
                 message.react("✅")
                 message.react("❌")
             }).catch(function() {
-            });
+            }))
             }else{
                 return message.reply("vous ne possedez pas les droits pour utiliser cette commande")
 }}})
