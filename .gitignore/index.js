@@ -63,10 +63,7 @@ bot.on('message',message => {
         .setColor("#fffbfa")
     message.channel.sendEmbed(embed)
     }
-        break;
-        case "ping"
-        message.channel.sendMessage('Temp de latence avec le serveur: `' + `${message.createdTimestamp - Date.now()}` + ' ms`');
-
+    
     if (message.content.startsWith(prefix + "sondage")) {
         if(message.author.id == "381939268718690305"){
             let args = message.content.split("").slice(1);
