@@ -25,8 +25,10 @@ bot.on('message',message => {
         .addField("Nombres d'utilisateur sur le discord", message.guild.memberCount)
         .setColor("#fffbfa")
     message.channel.sendEmbed(embed)
-
     }
+
+        case "ping"
+        message.channel.sendMessage('Temp de latence avec le serveur: `' + `${message.createdTimestamp - Date.now()}` + ' ms`');
 
     if (message.content.startsWith(prefix + "sondage")) {
         if(message.author.id == "381939268718690305"){
